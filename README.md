@@ -1,0 +1,1 @@
+Maven project using SpringDataJPA
