@@ -16,15 +16,20 @@ public class User extends BaseEntity {
 
 	private String login;
 	private String password;
-	private String email;
+	
 
 	@Column(name = "first_name", length = 20)
 	private String firstName;
 
 	@Column(name = "last_name", length = 20)
 	private String lastName;
+	
+	@Column(name = "age", length = 3)
 	private int age;
 
+	@Column(name = "age", length = 3)
+	private String email;
+	
 	@Enumerated(EnumType.STRING)
 	private UserRole role;
 

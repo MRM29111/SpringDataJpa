@@ -36,12 +36,12 @@ public class BaseController {
 	
 	@GetMapping("/login")
 	public String showLoginPage(){
-		return "user";
+		return "login";
 	}
 	
 	@GetMapping("/register")
 	public String showRegisterPage(){
-		return "user";
+		return "register";
 	}
 	
 	@GetMapping("/item")

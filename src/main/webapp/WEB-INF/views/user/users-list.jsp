@@ -7,11 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Hello, user</h1>
-	
-	<form action = "${pageContext.request.contextPath}/">
-	 <input type = "submit" value = "Main menu">
-	</form>
-	
+
 </body>
 </html>
