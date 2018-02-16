@@ -14,8 +14,8 @@ import javax.persistence.Table;
 @Table(name = "user")
 public class User extends BaseEntity {
 
-	private String login;
-	private String password;
+	//private String login;
+	//private String password;
 	
 
 	@Column(name = "first_name", length = 20)
@@ -26,14 +26,14 @@ public class User extends BaseEntity {
 	
 	@Column(name = "age", length = 3)
 	private int age;
-
-	@Column(name = "age", length = 3)
+	
+	@Column(name = "email", length = 30)
 	private String email;
 	
-	@Enumerated(EnumType.STRING)
-	private UserRole role;
+	//@Enumerated(EnumType.STRING)
+	//private UserRole role;
 
-	@OneToMany(mappedBy = "user")
+	/*@OneToMany(mappedBy = "user")
 	private List<Course> courses = new ArrayList<>();
 
 	public String getLogin() {
@@ -50,7 +50,7 @@ public class User extends BaseEntity {
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
+	}*/
 
 	public String getEmail() {
 		return email;
@@ -76,13 +76,13 @@ public class User extends BaseEntity {
 		this.age = age;
 	}
 
-	public UserRole getRole() {
+	/*public UserRole getRole() {
 		return role;
 	}
 
 	public void setRole(UserRole role) {
 		this.role = role;
-	}
+	}*/
 
 	public String getLastName() {
 		return lastName;
@@ -92,18 +92,18 @@ public class User extends BaseEntity {
 		this.lastName = lastName;
 	}
 
-	public List<Course> getCourses() {
+	/*public List<Course> getCourses() {
 		return courses;
 	}
 
 	public void setCourses(List<Course> courses) {
 		this.courses = courses;
-	}
+	}*/
 
 	@Override
 	public String toString() {
-		return "User [login=" + login + ", password=" + password + ", email=" + email + ", firstName=" + firstName
-				+ ", lastNmae=" + lastName + ", age=" + age + ", role=" + role + ", getId()=" + getId() + "]";
+		return "User [ email=" + email + ", firstName=" + firstName
+				+ ", lastNmae=" + lastName + ", age=" + age + ", getId()=" + getId() + "]";
 	}
-
+//login=" + login + " password=" + password + ", , role=" + role + ",
 }

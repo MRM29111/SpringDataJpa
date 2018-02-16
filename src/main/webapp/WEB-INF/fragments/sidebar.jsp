@@ -25,4 +25,8 @@
 		<a href="${pageContext.request.contextPath}/course/list">List of courses</a>
 	</p>
 	
+	<p>
+		<a href="${pageContext.request.contextPath}/user/list">List of users</a>
+	</p>
+	
 </div>

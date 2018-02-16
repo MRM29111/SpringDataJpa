@@ -10,7 +10,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="${pageContext.request.contextPath}/login"><span class="glyphicon glyphicon-log-in"></span>
 						Login</a></li>
-				<li><a href="${pageContext.request.contextPath}/user/add-user"> Register</a></li>
+				<li><a href="${pageContext.request.contextPath}/user/add">Register</a></li>
 			</ul>
 		</div>
 	</div>

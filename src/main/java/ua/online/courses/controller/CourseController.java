@@ -44,7 +44,7 @@ public class CourseController {
 	}
 	
 	@GetMapping("/list") // localhost:8080/ROOT/course/list
-	public String showUsersList(Model model) {
+	public String showCoursesList(Model model) {
 		model.addAttribute("coursesList", courseService.findAllCourses());
 		return "course/courses-list";
 	}

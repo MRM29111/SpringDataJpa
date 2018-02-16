@@ -8,7 +8,8 @@
 	age: <input type="text" name="age"> <br />
 	email: <input type="text" name="email"> <br />
 	
-	<input type="submit" value="Create new User">
+	
+	<input type="submit" value="Create User">
 </form>
 	
 	<form action = "${pageContext.request.contextPath}/">
